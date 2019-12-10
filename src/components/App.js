@@ -82,12 +82,12 @@ deleteTask(event,taskIndex){
         </div>
         
     );
-InputChanged(e) {
-  onst{value} = e.target;
+InputChanged(event) {
+  const{value} = event.target;
   this.setState( {task: value} 
     );
   }
-}
+
 onDeleteTask(event){
   event.preventDefault();
   deleteTask();
